@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xy371661665/XYNetworking.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/xy371661665/XYNetworking.git", :tag => "master" , :commit => "ab5893ac5a513f7a84bcb20ccaedb8c0939ecce5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
