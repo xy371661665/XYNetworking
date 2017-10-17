@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xy371661665/XYNetworking.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/xy371661665/XYNetworking.git", :tag => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "XYNetworking/Classes", "XYNetworking/Classes/**/*.{h,m}"
-  s.exclude_files = "XYNetworking/Classes/Exclude"
+  # s.exclude_files = "XYNetworking/Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   s.frameworks = 'UIKit', 'Foundation'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -133,6 +133,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency  = 'AFNetworking'
+  s.dependency "AFNetworking"
 
 end
